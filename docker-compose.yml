@@ -1,0 +1,7 @@
+services:
+  api-dog:
+    build: .
+    container_name: api-dog
+    restart: unless-stopped
+    ports:
+      - "5001:5000"
